@@ -12,3 +12,9 @@ end
 cubertino(8)
 
 # 512
+
+def welcome(name)
+    return "Hello, #{name}!"
+end
+
+welcome("Steveen")

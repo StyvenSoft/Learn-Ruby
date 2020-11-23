@@ -18,3 +18,15 @@ puts_1_to_10 # Ignore this for now. We'll explain it soon!
 # 8
 # 9
 # 10
+
+def double(n)
+    return n * 2
+end
+
+puts double(15)
+
+def welcome
+    puts "Welcome to Ruby!"
+end
+  
+welcome

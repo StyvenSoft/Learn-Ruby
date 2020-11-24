@@ -12,6 +12,8 @@ puts "I'm writing code!" if true
 
 puts "It's true!" if true
 
+1 < 2 if puts "One is less than two!"
+
 ## The One-Line Unless
 
 # Type your Ruby code below!

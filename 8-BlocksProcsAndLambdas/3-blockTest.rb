@@ -35,3 +35,19 @@ yield_name("Jamie") { |n| puts "My name is #{n}." }
 # In between the yields!
 # My name is Jamie.
 # Block complete! Back in the method.
+
+def double(num)
+  yield(num)
+end
+
+double(16) {|x| puts x * 2}
+
+# 32
+
+multiples_of_3 = Proc.new do |n|
+  n % 3 == 0
+end
+
+print (1..100).to_a.select(&multiples_of_3)
+
+# [3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 57, 60, 63, 66, 69, 72, 75, 78, 81, 84, 87, 90, 93, 96, 99]
